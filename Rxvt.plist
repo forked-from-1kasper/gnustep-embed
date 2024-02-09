@@ -1,0 +1,6 @@
+{
+    title     = "Rxvt";
+    icon      = "/usr/share/icons/Terminal.app.tiff";
+    filepath  = "/usr/bin/urxvt";
+    arguments = "-embed %i";
+}

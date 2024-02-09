@@ -1,0 +1,6 @@
+{
+    title     = "XTerm";
+    icon      = "/usr/share/icons/Terminal.app.tiff";
+    filepath  = "/usr/bin/uxterm";
+    arguments = "-into %i -bw 0 -xrm *allowSendEvents:true";
+}
