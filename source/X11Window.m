@@ -47,7 +47,7 @@
     event.xclient.format       = 32;
     event.xclient.data.l[0]    = X11Atom[WMDeleteWindow];
     event.xclient.data.l[1]    = CurrentTime;
-    XSendEvent(display, winref, false, NoEventMask, &event);
+    XSendEvent(display, winref, False, NoEventMask, &event);
 }
 
 + (id) alloc
@@ -124,8 +124,8 @@
     [X11App() manage:winref by:self];
 
     XSelectInput(display, winref, PropertyChangeMask);
-    XGrabButton(display, AnyButton, AnyModifier, winref, false, ButtonPressMask, GrabModeAsync, GrabModeAsync, None, None);
-    XGrabKey(display, AnyKey, AnyModifier, winref, false, GrabModeAsync, GrabModeAsync);
+    XGrabButton(display, AnyButton, AnyModifier, winref, False, ButtonPressMask, GrabModeAsync, GrabModeAsync, None, None);
+    XGrabKey(display, AnyKey, AnyModifier, winref, False, GrabModeAsync, GrabModeAsync);
 
     [self refresh];
 }
