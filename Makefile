@@ -22,3 +22,6 @@ $(BUILDDIR):
 
 clean:
 	rm -f $(BINARY) $(OMFILES)
+
+run: $(BUILDDIR) $(BINARY)
+	$(shell realpath $(BINARY)) -config XTerm.plist
